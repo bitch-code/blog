@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Saiful Miqdar | Pengenalan Arduino </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Tutorial belajar dasar arduino bagi pemula">
+    <meta name="google-site-verification" content="iTECoUQSJq5XUI4vxzjEXcGhfca370eLbePxOoleXMg">
+    
+    <link rel="stylesheet"
+          href="/css/style.min.145810c1ef0ab8530279b2a02926ac4fecfeaa44493a0ad274132fac21fe9e64.css"
+          integrity="sha256-FFgQwe8KuFMCebKgKSasT&#43;z&#43;qkRJOgrSdBMvrCH&#43;nmQ="
+          crossorigin="anonymous"
+          type="text/css">
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.cc84ed683057cc175ddfa738ea6ba2d5c882b95cb64f50bf9be918cb3791887b.css"
+        integrity="sha256-zITtaDBXzBdd36c46mui1ciCuVy2T1C/m&#43;kYyzeRiHs="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="/favicons/profile.pngfavicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/profile.pngapple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/profile.pngfavicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/profile.pngfavicon-16x16.png">
+
+    <link rel="canonical" href="/post/pengenalan-arduino/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.d8599ee07b7d3f11bafbac30657ccc591e8d7fd36a9f580cd4c09e24e0e4a971.js"
+            integrity="sha256-2Fme4Ht9PxG6&#43;6wwZXzMWR6Nf9Nqn1gM1MCeJODkqXE="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="/js/anatole-theme-switcher.min.e289e9ebb2a4e7a7f895859c8a2b0da2de1ec73f22cea58d8475aa0597023837.js"
+                integrity="sha256-4onp67Kk56f4lYWciisNot4exz8izqWNhHWqBZcCODc="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://saifulmqdr.ml/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Pengenalan Arduino"/>
+<meta name="twitter:description" content="Tutorial belajar dasar arduino bagi pemula"/>
+
+
+    
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/profile.png" alt="profile picture">
+            <h3 title=""><a href="/">Saiful Miqdar</a></h3>
+            <div class="description">
+                <p>I'am toxic but not stupid</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://de.linkedin.com/mwlite/in/saiful-miqdar-7050511b1" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/bitch-code" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/saiful_mqdr" rel="me" aria-label="instagram">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:pennysxploit@gmail.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Saiful Miqdar  2020-2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+            
+            <li><a 
+                   href="/contact/"
+                        
+                   title="">Contact</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <img class="post-thumbnail" src="/images/arduino/arduino_uno.jpg" alt="Thumbnail image">
+            
+            <div class="post-title">
+                <h3>Pengenalan Arduino</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date"> Fri, Apr 2, 2021 
+                                           </span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">7-minute read</span>
+                    </div>
+                
+            </div>
+
+            <h1 id="apa-itu-arduino">Apa itu Arduino?</h1>
+<p>Arduino adalah micro kontroller open source yang dirancang untuk memudahkan pembuatan proyek - proyek elektronika dalam berbagai bidang.</p>
+<h1 id="apa-itu-open-source-">Apa itu open source ?</h1>
+<p>Open source adalah perangkat lunak dimana kode program nya terbuka dan disediakan oleh pengembangnya secara umum agar dapat dipelajari, diubah atau dikembangkan lebih lanjut dan disebar luaskan.</p>
+<h1 id="apa-kelebihan-arduino">Apa kelebihan Arduino?</h1>
+<p>Kelebihan Arduino yaitu memiliki bootloader sendiri, murah, mudah dipelajari, punya banyak library gratis, menggunakan port USB, bersifat open source, dan masih banyak lagi.</p>
+<h1 id="apa-fungsi-arduino-">Apa Fungsi Arduino ?</h1>
+<p>Seperti kita ketahui, sebuah mikrokontroler dapat membuat program untuk mengendalikan berbagai komponen elektronika. Dan fungsi Arduino ini dibuat untuk memudahkan kita dalam melakukan prototyping, memprogram mikrokontroler, membuat alat-alat canggih berbasis mikrokontorler.</p>
+<h1 id="jenis---jenis-arduino">Jenis - jenis arduino</h1>
+<ol>
+<li>
+<p><strong>Arduino Uno</strong>
+<img src="/images/arduino/uno.jpg" alt="arduino uno saifulmqdr.ml">
+Jenis yang ini adalah yang paling banyak digunakan. Terutama untuk pemula sangat disarankan untuk menggunakan Arduino Uno. Dan banyak sekali referensi yang membahas Arduino Uno. Versi yang terakhir adalah Arduino Uno R3 (Revisi 3), menggunakan ATMEGA328 sebagai Microcontrollernya, memiliki 14 pin I/O digital dan 6 pin input analog. Untuk pemograman cukup menggunakan koneksi USB type A to To type B. Sama seperti yang digunakan pada USB printer.</p>
+</li>
+<li>
+<p><strong>Arduino Due</strong>
+<img src="/images/arduino/due.jpg" alt="arduino due saifulmqdr.ml">
+Berbeda dengan saudaranya, Arduino Due tidak menggunakan ATMEGA, melainkan dengan chip yang lebih tinggi ARM Cortex CPU. Memiliki 54 I/O pin digital dan 12 pin input analog. Untuk pemogramannya menggunakan Micro USB, terdapat pada beberapa handphone.</p>
+</li>
+<li>
+<p><strong>Arduino Mega</strong>
+<img src="/images/arduino/mega.jpg" alt="arduino mega saifulmqdr.ml">
+Mirip dengan Arduino Uno, sama-sama menggunakan USB type A to B untuk pemogramannya. Tetapi Arduino Mega, menggunakan Chip yang lebih tinggi ATMEGA2560. Dan tentu saja untuk Pin I/O Digital dan pin input Analognya lebih banyak dari Uno.</p>
+</li>
+<li>
+<p><strong>Arduino Leonardo</strong>
+<img src="/images/arduino/leonardo.jpg" alt="arduino leonardo saifulmqdr.ml">
+Bisa dibilang Leonardo adalah saudara kembar dari Uno. Dari mulai jumlah pin I/O digital dan pin input Analognya sama. Hanya pada Leonardo menggunakan Micro USB untuk pemogramannya.</p>
+</li>
+<li>
+<p><strong>Arduino Fio</strong>
+<img src="/images/arduino/fio.jpg" alt="arduino fio saifulmqdr.ml">
+Bentuknya lebih unik, terutama untuk socketnya. Walau jumlah pin I/O digital dan input analognya sama dengan uno dan leonardo, tapi Fio memiliki Socket XBee. XBee membuat Fio dapat dipakai untuk keperluan projek yang berhubungan dengan wireless.</p>
+</li>
+<li>
+<p><strong>Arduino Lilypad</strong>
+<img src="/images/arduino/lilypad.jpg" alt="arduino lilypad saifulmqdr.ml">
+Bentuknya yang melingkar membuat Lilypad dapat dipakai untuk membuat projek unik. Seperti membuat amor iron man misalkan. Hanya versi lamanya menggunakan ATMEGA168, tapi masih cukup untuk membuat satu projek keren. Dengan 14 pin I/O digital, dan 6 pin input analognya.</p>
+</li>
+<li>
+<p><strong>Arduino Nano</strong>
+<img src="/images/arduino/nano.jpg" alt="arduino nano saifulmqdr.ml">
+Sepertinya namanya, Nano yang berukulan kecil dan sangat sederhana ini, menyimpan banyak fasilitas. Sudah dilengkapi dengan FTDI untuk pemograman lewat Micro USB. 14 Pin I/O Digital, dan 8 Pin input Analog (lebih banyak dari Uno). Dan ada yang menggunakan ATMEGA168, atau ATMEGA328.</p>
+</li>
+<li>
+<p><strong>Arduino Mini</strong>
+<img src="/images/arduino/mini.jpg" alt="arduino mini saifulmqdr.ml">
+Fasilitasnya sama dengan yang dimiliki Nano. Hanya tidak dilengkapi dengan Micro USB untuk pemograman. Dan ukurannya hanya 30 mm x 18 mm saja.</p>
+</li>
+<li>
+<p><strong>Arduino Micro</strong>
+<img src="/images/arduino/micro.jpg" alt="arduino micro saifulmqdr.ml">
+Ukurannya lebih panjang dari Nano dan Mini. Karena memang fasilitasnya lebih banyak yaitu; memiliki 20 pin I/O digital dan 12 pin input analog.</p>
+</li>
+<li>
+<p><strong>Arduino Ethernet</strong>
+<img src="/images/arduino/ethernet.jpg" alt="arduino ethernet saifulmqdr.ml">
+Ini arduino yang sudah dilengkapi dengan fasilitas ethernet. Membuat Arduino kamu dapat berhubungan melalui jaringan LAN pada komputer. Untuk fasilitas pada Pin I/O Digital dan Input Analognya sama dengan Uno.</p>
+</li>
+<li>
+<p><strong>Arduino Esplora</strong>
+<img src="/images/arduino/esplora.jpg" alt="arduino esplora saifulmqdr.ml">
+Rekomendasi bagi kamu yang mau membuat gadget sepeti Smartphone, karena sudah dilengkapi dengan Joystick, button, dan sebagainya. Kamu hanya perlu tambahkan LCD, untuk lebih mempercantik Esplora.</p>
+</li>
+<li>
+<p><strong>Arduino Robot.</strong>
+<img src="/images/arduino/robot.png" alt="arduino robot saifulmqdr.ml">
+Ini adalah paket komplit dari Arduino yang sudah berbentuk robot. Sudah dilengkapi dengan LCD, Speaker, Roda, Sensor Infrared, dan semua yang kamu butuhkan untuk robot sudah ada pada Arduino ini.</p>
+</li>
+</ol>
+<p>Bagaimana, Apa sudah ada gambaran tentang arduino?. Ok Saya anggap sudah :v
+Pada artikel kali ini dan seterusnya, saya akan menggunakan arduino uno sebagai bahan praktek membuat projeck simple. Mengapa pake arduino uno? Ya karna arduino uno saya rasa mudah didapat, mudah digunakan dan banyak artikel dan tutorial yg menggunakan arduino uno ini. Jadi rekomend banged buat para beginder.</p>
+<h1 id="ada-apa-aja-didalam-board-arduino">Ada apa aja didalam board arduino?</h1>
+<p>Ada banyak varian jenis board arduino yg dapat digunakan beberapa board ada yang terlihat sedikit berbeda tetapi hampir semua komponen utama sama. Dibawah ini adalah board arduino uno dan saya akan mencoba menjelaskan apa aja yg ada didalamnya.</p>
+<p><img src="/images/arduino/board_uno.jpg" alt="board arduino uno saifulmqdr.ml"></p>
+<h3 id="power-usb--barrel-jack">Power (USB / Barrel Jack)</h3>
+<p>Setiap Arduino memiliki jalur yang akan dihubungkan dengan sumber tenaga/tegangan. Arduino UNO dapat diberi tegangan melalui USB (1) dapat berasal dari komputer, power bank atau berasal dari power supply melalui barrel jack (2). Koneksi kabel USB juga berfungsi untuk jalur pemograman ke board Arduino.</p>
+<p>Warning: Jangan menggunakan power supply yang tegangannya lebih dari 20 Volt, karena dapat merusak board Arduino karena overpower. Tegangan yang dizinkan untuk Arduino adalah 6 - 12 Volt.</p>
+<h3 id="pin-5v-33v-gnd-analog-digital-pwm-aref">Pin (5V, 3.3V, GND, Analog, Digital, PWM, AREF)</h3>
+<p>Pin pada Arduino adalah tempat dimana untuk menyambungkan kabel antara pin Arduino dengan perangkat-perangkat input/output (biasanya menghubungkan dengan rangakain project pada breadboard). Pin Arduino biasanya berupa female header sehingga untuk mendapatkan koneksi dari pin Arduino hanya cukup colokan kabel ke dalam lubang pin header tersebut. Terdapat beberapa pin pada Arduino dengan fungsi yang berbeda-beda, masing-masing pin diberi label sesuai nama dan fungsinya pada PCB.</p>
+<p>— GND (3): Kependekan dari &lsquo;Ground&rsquo;. Terdapat beberapa pin ground dan semuanya dapat digunakan.</p>
+<p>— 5V (4) &amp; 3.3V (5): 5V pin memberikan supply tegangan 5 volt, dan 3.3V pin memberikan supply tegangan 3.3 volt. Kebanyakan arduino pake tegangan 5 atau 3.3 volt</p>
+<p>— Analog (6): Pin yang berada di bawah tulisan &lsquo;Analog In&rsquo; (A0 sampai A5 pada Arduino UNO) adalah pin Analog Input. Pin ini dapat membaca sinyal dari sensor analog (seperti sensor suhu) dan mengkonversinya kedalam nilai digital yang dapat kita baca.</p>
+<p>— Digital (7): Terletak disisi lain dari analog pin terdapat pin digital (0 sampai 13 pada UNO). Pin ini dapat difungsikan sebagai digital input (seperti memberitahukan apabila button dipencet) dan digital output (seperti menyalakan sebuah LED).</p>
+<p>— PWM (8): Kalian bisa melihat simbol (~) pada beberapa pin digital (3, 5, 6, 7, 9, 10, dan 11 pada UNO). Pin ini berfungsi sebagai pin digital biasanya, tapi bisa digunain juga untuk Pulse-Width Modulation (PWM), sederhananya pin ini dapat mengeluarkan keluaran tegangan Analog.</p>
+<p>— AREF (9): Singkatan dari Analog Reference. Pin ini digunakan untuk mengatur tegangan referensi external (antara 0 dan 5 volt) sebagai batas untuk pin analog input.</p>
+<h3 id="tombol-reset">Tombol Reset</h3>
+<p>Kek komputer pada umumnya, Arduino punya tombol reset (10). Menekan tombol ini akan menghubungkan pin reset dengan ground dan merestart semua kode program yang ada di dalam Arduino. Reset ini akan sangat membantu jika kode tidak berjalan berulang-ulang, tapi kamu ingin menjalankannya beberapa kali.</p>
+<h3 id="power-led-indicator">Power LED Indicator</h3>
+<p>Tepat di bawah dan di sebelah kanan kata &ldquo;UNO&rdquo; di board Arduino, ada LED kecil di samping kata &lsquo;ON&rsquo; (11). LED ini harus menyala setiap kali Anda memasukkan Arduino Anda ke sumber tegangan. Jika lampu ini tidak menyala, ada kemungkinan ada sesuatu yang salah.</p>
+<h3 id="tx-rx-led">TX RX LED</h3>
+<p>TX adalah singkatan dari transmit, RX adalah singkatan dari receive. Kata ini cukup familiar dalam istilah elektronik untuk menunjukkan pin sebagai komunikasi serial. Dalam board Arduino terdapat dua tempat tulisan TX dan RX - pertama pada pin digital 0 dan 1, dan yang kedua di samping indikator LED TX dan RX (12). LED ini akan memberi kita beberapa indikasi visual setiap kali Arduino menerima atau mentransmisikan data (seperti saat kita memasukan program baru ke board Arduino).</p>
+<h3 id="ic-utama">IC Utama</h3>
+<p>Berwarna hitam terdapat banyak kaki logam disampingnya adalah IC, atau Integrated Circuit (13). Anggap saja itu sebagai otaknya Arduino. IC utama pada Arduino UNO berbeda dengan jenis board Arduino lainnya tapi biasanya merupakan IC keluarga ATmega yang diproduksi oleh perusahaan ATMEL. Untuk mengetahui jenis IC yang dipakai bisa ditemukan secara tertulis disisi atas IC. Jika Anda ingin tahu lebih banyak tentang perbedaan antara IC tersebut, dapat dilihat pada datasheet.</p>
+<h3 id="voltage-regulator">Voltage Regulator</h3>
+<p>Regulator tegangan (14) berfungsi untuk membatasi jumlah tegangan yang masuk ke board Arduino. Anggap saja itu sebagai semacam gatekeeper; ini akan menghilangkan tegangan lebih yang mungkin membahayakan sirkuit. Tentu saja, ini memiliki batas, jadijangan menghubungkan Arduino Anda dengan yang lebih besar dari 20 volt.</p>
+<p>Buat yg mau beli, tapi gk tau bli d mn. Cek aja toko online kek Lazada, shopi, tokopedia. Kalo gw sih d lazada karna bisa cod :v. Kalo klean gk punya akun onlenshop kalian bisa langsung beli ke toko cnc store bandung.</p>
+<p>Ok mungkin cukup sekian, semoga bermanfa&rsquo;at, sampai jumpa d artikel berikutnya 😐</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                
+                <span class="separator"><a class="tag" href="/tags/arduino/">arduino</a></span>
+            </div>
+        </div>
+
+        <div id="fb_comments_container">
+                    <h2>comments</h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "disqus_1JXiWYQryV" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro="
+        crossorigin="anonymous"></script></body>
+
+</html>

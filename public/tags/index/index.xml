@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>index on Website of Saiful Miqdar</title>
+    <link>https://saifulmqdr.ml/tags/index/</link>
+    <description>Recent content in index on Website of Saiful Miqdar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://saifulmqdr.ml/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Posts</title>
+      <link>https://saifulmqdr.ml/post/</link>
+      <pubDate>Fri, 02 Apr 2021 08:11:12 +0000</pubDate>
+      
+      <guid>https://saifulmqdr.ml/post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
